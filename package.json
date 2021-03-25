@@ -1,0 +1,41 @@
+{
+  "name": "san-form-validate",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A San project",
+  "scripts": {
+    "test": "jest __tests__ --watch --coverage --no-cache",
+    "start": "cross-env NODE_ENV=development san serve --config san.config.js",
+    "build": "cross-env NODE_ENV=production san build --config san.config.js",
+    "analyzer": "cross-env NODE_ENV=production san build --config san.config.js --analyze",
+    "build:modern": "cross-env NODE_ENV=production san build --config san.config.js --modern",
+    "lint": "eslint --ignore-path .eslintignore ./"
+  },
+  "keywords": [
+    "San",
+    "San CLI"
+  ],
+  "author": "luoyi06 <luoyi06@baidu.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/eslint-parser": "^7.13.10",
+    "@babel/eslint-plugin": "^7.13.10",
+    "@babel/preset-env": "^7.12.1",
+    "@ecomfe/eslint-config": "^7.0.0",
+    "babel-jest": "^26.6.1",
+    "cross-env": "^5.2.0",
+    "eslint": "^7.22.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-san": "0.0.1",
+    "fecs": "^1.6.2",
+    "jest": "^26.6.1",
+    "san-cli": "3.0.0"
+  },
+  "dependencies": {
+    "san": "^3.7.4",
+    "san-store": "1.1.0",
+    "san-update": "^2.1.0",
+    "flyio": "^0.6.2"
+  }
+}

@@ -1,0 +1,7 @@
+node_modules
+coverage
+mock
+__test__
+examples
+output
+scripts
